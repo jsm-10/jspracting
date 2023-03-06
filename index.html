@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Calculador Arbitraje</title>
+</head>
+<header>
+<nav class="navbar navbar-light bg-light mb-5">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        CriptoArbitraje
+    </a>
+    </div>
+</nav>
+</header>
+<body id="bodyid" class="p-3 mb-2 bg-dark text-white">
+    <div class="container">
+    <div class="row col">
+        <div id= "jj" class="card col border-top-0" style="width: 18rem;">
+        <div class="card-body">
+        <h5 class="card-title text-dark">Bitcoin Price</h5>
+        <h6 id="btccard" class="card-subtitle mb-2 text-dark"></h6>
+        </div>
+    </div>
+        <div class="card col border-end-0" style="width: 18rem;">
+            <div class="card-body">
+            <h5 class="card-title text-dark">Ethereum Price</h5>
+            <h6 id="ethcard" class="card-subtitle mb-2 text-dark"></h6>
+            </div>
+        </div>
+            <div class="card col" style="width: 18rem;">
+                <div class="card-body">
+                <h5 class="card-title text-dark">USD Price</h5>
+                <h6 id="usdcard" class="card-subtitle mb-2 text-dark"></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pedit">
+        <form action="" class="container">
+        <h1 class="title display-6">Simulador de arbitraje, elegi una moneda</h1>
+        <h2 id="Prices"> </h2>
+        <p><select id="eleccion" class="form-select d-flex justify-content-center shadow p-3 mb-5 bg-body rounded" size="3" aria-label="size 3 select example">
+            <option value="0">BTC</option>
+            <option value="0">ETH</option>
+            <option value="200">USD</option>
+        </select></p>
+        <button type="button" value="Calcular Arbitraje" id="boton" class="btn btn-light">Seleccionar</button>
+    </div> 
+</form>
+<footer>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">CriptoArbitraje</a>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <span class="navbar-text">
+            Todos los derechos reservados
+            </span>
+        </div>
+        </div>
+    </nav>
+</footer>
+</body>
+<script src="./main.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>
